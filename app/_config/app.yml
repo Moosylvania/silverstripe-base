@@ -1,0 +1,25 @@
+---
+Name: app
+---
+SilverStripe\Core\Manifest\ModuleManifest:
+  project: app
+SilverStripe\Control\Session:
+  cookie_secure: true
+SilverStripe\i18n\i18n:
+  default_locale: 'en_US'
+  date_format: 'MM/dd/yyyy'
+StevieMayhew\SilverStripeSVG\SVGTemplate:
+  base_path: 'public/images/svg/'
+  default_extra_classes:
+    - 'svg-image'
+SilverStripe\Assets\File:
+  allowed_extensions:
+    - svg
+    - gltf
+    - glb
+    - mov
+    - webm
+  extensions:
+    - App\Extensions\FileExtension
+Atwx\ViteHelper\Helper\ViteHelper:
+  editor_css: 'app/client/src/scss/editor.scss'

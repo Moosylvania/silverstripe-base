@@ -1,0 +1,26 @@
+{
+  "app/client/src/js/app.js": {
+    "file": "assets/app.js-jEFU4fiY.js",
+    "name": "app.js",
+    "src": "app/client/src/js/app.js",
+    "isEntry": true
+  },
+  "app/client/src/scss/app.scss": {
+    "file": "assets/app-tn0RQdqM.css",
+    "src": "app/client/src/scss/app.scss",
+    "isEntry": true,
+    "names": [
+      "app.css",
+      "editor.css"
+    ]
+  },
+  "app/client/src/scss/editor.scss": {
+    "file": "assets/app-tn0RQdqM.css",
+    "src": "app/client/src/scss/app.scss",
+    "isEntry": true,
+    "names": [
+      "app.css",
+      "editor.css"
+    ]
+  }
+}

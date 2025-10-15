@@ -1,0 +1,77 @@
+{
+    "name": "silverstripe/installer",
+    "type": "silverstripe-recipe",
+    "description": "The SilverStripe Framework Installer",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/obj63mc/silverstripe-seo"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/obj63mc/silverstripe-misdirection"
+        }
+    ],
+    "require": {
+        "php": "^8.4.0",
+        "ext-intl": "*",
+        "ext-mbstring": "*",
+        "ext-imagick": "*",
+        "silverstripe/recipe-plugin": "^2",
+        "silverstripe/recipe-cms": "^6.0",
+        "unclecheese/display-logic": "^4.0",
+        "silverstripe/s3": "dev-main",
+        "obj63mc/silverstripe-mysqlisslconnector": "^1.0.0",
+        "nglasl/silverstripe-misdirection": "dev-ss6.0",
+        "cloudinary/cloudinary_php": "^2.0",
+        "vulcandigital/silverstripe-seo": "dev-ss6.0",
+        "dnadesign/silverstripe-elemental": "^6",
+        "stevie-mayhew/silverstripe-svg": "^3.0",
+		"silverstripe/htmleditor-tinymce": "^1.0",
+        "bigfork/silverstripe-template-yield": "^4.0",
+        "silverstripe/blog": "^5.0",
+        "silverstripe-terraformers/keys-for-cache": "^3.0",
+        "atwx/silverstripe-vitehelper": "^1.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/src/"
+        },
+        "classmap": [
+            "app/src/Pages/Page.php",
+            "app/src/Controllers/PageController.php"
+        ]
+    },
+    "extra": {
+        "expose": [
+            "app/client/dist"
+        ],
+        "project-files-installed": [
+            "app/.htaccess",
+            "app/_config.php",
+            "app/_config/mimevalidator.yml",
+            "app/_config/mysite.yml",
+            "app/src/Page.php",
+            "app/src/PageController.php"
+        ],
+        "public-files-installed": [
+            ".htaccess",
+            "index.php",
+            "install-frameworkmissing.html",
+            "install.php",
+            "web.config"
+        ],
+        "resources-dir": "_resources"
+    },
+    "config": {
+        "process-timeout": 600,
+        "allow-plugins": {
+            "composer/installers": true,
+            "silverstripe/recipe-plugin": true,
+            "silverstripe/vendor-plugin": true,
+            "php-http/discovery": true
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}

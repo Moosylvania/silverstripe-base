@@ -1,0 +1,9 @@
+---
+Name: appemailconfig
+After:
+  - '#emailconfig'
+---
+SilverStripe\Control\Email\Email:
+  admin_email:
+    noreply@domain.com: 'DOMAIN'
+

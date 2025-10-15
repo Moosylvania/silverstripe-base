@@ -1,0 +1,31 @@
+---
+Name: app-mimeuploadvalidator
+After: '#mimeuploadvalidator'
+Only:
+  moduleexists: 'silverstripe/mimevalidator'
+---
+SilverStripe\MimeValidator\MimeUploadValidator:
+  MimeTypes:
+    svg:
+      - 'image/svg+xml'
+      - 'image/svg'
+    gltf:
+      - 'model/gltf'
+      - 'model/gltf+json'
+      - 'model/gltf-binary'
+      - 'application/octet-stream'
+      - 'application/gltf-buffer'
+    glb:
+      - 'model/gltf'
+      - 'model/gltf+json'
+      - 'model/gltf-binary'
+      - 'application/octet-stream'
+      - 'application/gltf-buffer'
+    mov:
+      - 'video/mov'
+      - 'video/mp4'
+    webm:
+      - 'video/webm'
+SilverStripe\Core\Injector\Injector:
+  SilverStripe\Assets\Upload_Validator:
+    class: SilverStripe\MimeValidator\MimeUploadValidator
