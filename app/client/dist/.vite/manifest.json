@@ -6,20 +6,18 @@
     "isEntry": true
   },
   "app/client/src/scss/app.scss": {
-    "file": "assets/app-tn0RQdqM.css",
+    "file": "assets/app-Cjj4pm6M.css",
     "src": "app/client/src/scss/app.scss",
     "isEntry": true,
     "names": [
-      "app.css",
-      "editor.css"
+      "app.css"
     ]
   },
   "app/client/src/scss/editor.scss": {
-    "file": "assets/app-tn0RQdqM.css",
-    "src": "app/client/src/scss/app.scss",
+    "file": "assets/editor-tn0RQdqM.css",
+    "src": "app/client/src/scss/editor.scss",
     "isEntry": true,
     "names": [
-      "app.css",
       "editor.css"
     ]
   }
