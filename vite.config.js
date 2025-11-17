@@ -45,7 +45,7 @@ export default defineConfig(({command}) => {
 		plugins: [
 			vue(),
 			{
-			name: 'reload-ss',
+				name: 'reload-ss',
 				handleHotUpdate({ file, server }) {
 					if (file.endsWith('.ss')) {
 						server.ws.send({
