@@ -1,5 +1,5 @@
 import app from './Vue/app';
-import useWhenActivated from './Vue/Composables/useWhenActivated';
+import useWhenActivated from '@composables/useWhenActivated';
 
 async function initPage() {
     await useWhenActivated;

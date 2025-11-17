@@ -1,14 +1,15 @@
 {
   "app/client/src/js/app.js": {
-    "file": "assets/app.js-jEFU4fiY.js",
+    "file": "assets/app.js-DzeGx0eQ.js",
     "name": "app.js",
     "src": "app/client/src/js/app.js",
     "isEntry": true
   },
   "app/client/src/scss/app.scss": {
-    "file": "assets/app-Cjj4pm6M.css",
+    "file": "assets/app-xOxiXKZX.css",
     "src": "app/client/src/scss/app.scss",
     "isEntry": true,
+    "name": "app.scss",
     "names": [
       "app.css"
     ]
@@ -17,6 +18,7 @@
     "file": "assets/editor-tn0RQdqM.css",
     "src": "app/client/src/scss/editor.scss",
     "isEntry": true,
+    "name": "editor.scss",
     "names": [
       "editor.css"
     ]
