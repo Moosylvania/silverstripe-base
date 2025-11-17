@@ -17,11 +17,6 @@ $MetaTags
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 
-<style>
-@view-transition {
-    navigation: auto;
-}
-</style>
 $ViteClient.RAW
 <link rel="stylesheet" href="$Vite('app/client/src/scss/app.scss')">
 <% yield 'Preload' %>
