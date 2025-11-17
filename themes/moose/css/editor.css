@@ -1,0 +1,955 @@
+:root {
+  --primary-color: #79580e;
+  --secondary-color:#F0E8D9;
+  --background-color: #FEBA50;
+  --button-background: #79580e;
+  --button-primary: #F0E8D9;
+}
+
+.orange-bg, .original, .dark-bg {
+  --primary-color: #F0E8D9;
+  --secondary-color: #F0E8D9;
+  --third-color:#79580e;
+  --background-color: #EF8448;
+  --button-background: #F0E8D9;
+  --button-primary: #79580e;
+  background-color: var(--background-color);
+}
+
+.light-orange-bg, .pineapple-cream {
+  --primary-color: #F0E8D9;
+  --secondary-color: #F0E8D9;
+  --third-color:#79580e;
+  --background-color: #FF9F1A;
+  --button-background: #F0E8D9;
+  --button-primary: #79580e;
+  background-color: var(--background-color);
+}
+
+.blue-bg, .coconut-cream {
+  --primary-color: #F0E8D9;
+  --secondary-color: #F0E8D9;
+  --third-color:#79580e;
+  --background-color: #00BBBC;
+  --button-background: #F0E8D9;
+  --button-primary: #79580e;
+  background-color: var(--background-color);
+}
+
+.dark-orange-bg, .pumpkin-spice {
+  --primary-color: #F0E8D9;
+  --secondary-color: #F0E8D9;
+  --third-color:#79580e;
+  --background-color: #E5682B;
+  --button-background: #F0E8D9;
+  --button-primary: #79580e;
+  background-color: var(--background-color);
+}
+
+.red-bg, .peppermint-bark {
+  --primary-color: #F0E8D9;
+  --secondary-color: #F0E8D9;
+  --third-color:#79580e;
+  --background-color: #E64342;
+  --button-background: #F0E8D9;
+  --button-primary: #79580e;
+  background-color: var(--background-color);
+}
+
+.brown-bg {
+  --primary-color: #F0E8D9;
+  --secondary-color: #F0E8D9;
+  --third-color:#EF8448;
+  --background-color: #79580e;
+  --button-background: #F0E8D9;
+  --button-primary: #79580e;
+  background-color: var(--background-color);
+}
+
+.light-bg {
+  --primary-color: #79580e;
+  --secondary-color:#79580e;
+  --third-color:#EF8448;
+  --background-color: #F0E8D9;
+  --button-background: #79580e;
+  --button-primary: #F0E8D9;
+  background-color: var(--background-color);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "ITCQuorum";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/ITCQuorumLight.woff2") format("woff2"), url("/fonts/ITCQuorumLight.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "ITCQuorum";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/ITCQuorumBook.woff2") format("woff2"), url("/fonts/ITCQuorumBook.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "ITCQuorum";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/ITCQuorumMedium.woff2") format("woff2"), url("/fonts/ITCQuorumMedium.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "ITCQuorum";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/ITCQuorumBold.woff2") format("woff2"), url("/fonts/ITCQuorumBold.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "ITCQuorum";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/ITCQuorumBlack.woff2") format("woff2"), url("/fonts/ITCQuorumBlack.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Ruston SCript";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/RustonScript-Bold.woff2") format("woff2");
+}
+/*!
+ * Bootstrap Reboot v4.0.0 (https://getbootstrap.com)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+abbr[title],
+abbr[data-original-title] {
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  cursor: help;
+  border-bottom: 0;
+}
+
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+}
+
+blockquote {
+  margin: 0 0 1rem;
+}
+
+dfn {
+  font-style: italic;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+}
+
+sub {
+  bottom: -0.125em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):focus {
+  outline: 0;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+  -ms-overflow-style: scrollbar;
+}
+
+figure {
+  margin: 0 0 1rem;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+caption {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #6c757d;
+  text-align: left;
+  caption-side: bottom;
+}
+
+th {
+  text-align: inherit;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  border-radius: 0;
+}
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=date],
+input[type=time],
+input[type=datetime-local],
+input[type=month] {
+  -webkit-appearance: listbox;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  line-height: inherit;
+  color: inherit;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  outline-offset: -2px;
+  -webkit-appearance: none;
+}
+
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+
+output {
+  display: inline-block;
+}
+
+summary {
+  display: list-item;
+  cursor: pointer;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* For image replacement */
+body.mceContentBody {
+  font-size: 13px;
+}
+
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+
+.ir br {
+  display: none;
+}
+
+/* Hide for both screenreaders and browsers:
+css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal.
+www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -2px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  font-family: "Gotham A", "Gotham B", "Lato";
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: ls(100);
+  text-transform: uppercase;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: absolute;
+  width: auto;
+  background-color: white;
+  padding: 0.25em 0.5em;
+  color: black;
+  font-size: 0.8em;
+  font-family: "Gotham A", "Gotham B", "Lato";
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: ls(100);
+  text-transform: uppercase;
+  margin-top: 5px;
+  outline: 0;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+  visibility: hidden;
+}
+
+/* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clear {
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.center, .text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.no-pad-top {
+  padding-top: 0 !important;
+}
+
+@media screen and (min-width: 640px) {
+  .larger {
+    font-size: 1.5rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+img.left {
+  max-width: 50%;
+  margin: 0.5em 2em 1em 0;
+}
+img.right {
+  max-width: 50%; /* Responsive width */
+  margin: 0.5em 0 1em 2em;
+}
+img.leftAlone {
+  float: left;
+  margin-right: 100%;
+  margin-bottom: 1em;
+  clear: both;
+}
+img.center {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 1em;
+  clear: both;
+}
+
+.captionImage {
+  width: 100%;
+  margin-top: 0.5em;
+}
+.captionImage img {
+  margin: 0;
+  float: none;
+  max-width: none;
+  width: 100%;
+}
+.captionImage p {
+  clear: both;
+  margin: 0.5em 0;
+  font-style: italic;
+}
+.captionImage.left {
+  margin: 0.5em 3em 2em 0;
+  max-width: 50%;
+}
+.captionImage.left img {
+  margin-right: -1em;
+}
+.captionImage.right {
+  margin: 0.5em 0 2em 3em;
+  max-width: 50%;
+}
+.captionImage.right img {
+  margin-left: -1em;
+}
+.captionImage.right p {
+  margin-left: -1em;
+  text-align: left;
+}
+.captionImage.leftAlone {
+  float: none;
+  margin: 0 2em 2em 0;
+}
+.captionImage.center {
+  margin: 0 auto 2em;
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/inter-v19-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/inter-v19-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/inter-v19-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 500;
+  src: url("/fonts/inter-v19-latin-500italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/inter-v19-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-600italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 600;
+  src: url("/fonts/inter-v19-latin-600italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+:root {
+  --heading-color:black;
+  --text-color:black;
+  --accent-color:red;
+  --border-color:#666;
+  --header-size: 3.4375rem;
+  --container-padding:2.8125rem min(5%, 2.8125rem);
+  --container-gap:1.75rem;
+  --border-radius: 1.5625em;
+  interpolate-size: allow-keywords;
+}
+@media screen and (width > 930px) {
+  :root {
+    --header-size:5.4375rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  padding: var(--container-gap) 0;
+  background: var(--background-color);
+  font-family: "Inter", sans-serif;
+  color: var(--primary-color);
+}
+body * {
+  scroll-margin-top: var(--header-size);
+}
+
+main {
+  width: 100%;
+  display: grid;
+  gap: var(--container-gap);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1350px;
+  position: relative;
+  width: 90%;
+  border-radius: var(--border-radius);
+  padding: var(--container-padding);
+}
+
+.inner-container {
+  padding: var(--container-padding);
+  width: 100%;
+  border-radius: var(--border-radius);
+  margin: 0 auto;
+}
+.inner-container + .inner-container {
+  margin-top: var(--container-gap);
+}
+
+.padded {
+  padding: 5em 0;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  z-index: 0;
+}
+
+.video-container {
+  position: relative;
+}
+.video-container video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.video-container button.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+.video-container button.play svg path {
+  transition: all 0.3s;
+}
+.video-container button.play:hover svg path {
+  fill-opacity: 1;
+}
+
+.diamond {
+  background: var(--secondary-color);
+  aspect-ratio: 1;
+  clip-path: shape(from 46.63% 97.87%, curve to 2.13% 53.37% with 38.73% 81.56%/18.44% 61.27%, curve to 2.13% 46.63% with -0.71% 51.99%/-0.71% 48.01%, curve to 46.63% 2.13% with 18.44% 38.73%/38.73% 18.44%, curve to 53.37% 2.13% with 48.01% -0.71%/51.99% -0.71%, curve to 97.87% 46.63% with 61.27% 18.44%/81.56% 38.73%, curve to 97.87% 53.37% with 100.71% 48.01%/100.71% 51.99%, curve to 53.37% 97.87% with 81.56% 61.27%/61.27% 81.56%, curve to 46.63% 97.87% with 51.99% 100.71%/48.01% 100.71%, close);
+}
+
+[v-cloak] {
+  opacity: 0;
+}
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .animate {
+      animation: var(--_animation) ease-in-out;
+      animation-timeline: view() !important;
+      animation-range: cover 25%;
+      isolation: isolate;
+      opacity: 0;
+    }
+    .bounce {
+      animation: var(--_animation) cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+  }
+}
+@keyframes bottom {
+  0% {
+    transform: translateY(5em);
+    opacity: 0;
+  }
+  15%, 80% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  25%, 80% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  25%, 80% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  20%, 80% {
+    opacity: 1;
+  }
+}
+@keyframes fadegrow {
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+  20%, 80% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+p, ul, ol, a {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 0;
+  font-size: clamp(1rem, 0.954rem + 0.19vw, 1.125rem);
+  line-height: 1.28;
+  color: var(--secondary-color);
+}
+p + p, p + ul, p + ol, ul + p, ul + ul, ul + ol, ol + p, ol + ul, ol + ol, a + p, a + ul, a + ol {
+  margin-top: 1em;
+}
+p.legal, ul.legal, ol.legal, a.legal {
+  font-size: clamp(0.563rem, 0.4rem + 0.67vw, 1rem);
+}
+
+a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+p + a, .inner-container + a {
+  margin-top: 1em;
+}
+a img {
+  text-decoration: none;
+}
+a:hover {
+  color: var(--third-color);
+}
+
+.title, h1, h2, h3, h4, h5, h6, blockquote {
+  font-family: "ITCQuorum", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: normal;
+  text-transform: uppercase;
+  position: relative;
+}
+.title + p, p + .title, h1 + p, p + h1, h2 + p, p + h2, h3 + p, p + h3, h4 + p, p + h4, h5 + p, p + h5, h6 + p, p + h6, blockquote + p, p + blockquote {
+  margin-top: 0.5em;
+}
+.title.primary, h1.primary, h2.primary, h3.primary, h4.primary, h5.primary, h6.primary, blockquote.primary {
+  font-size: clamp(2.5rem, 1.943rem + 2.29vw, 4rem);
+}
+.title.primary span.larger, h1.primary span.larger, h2.primary span.larger, h3.primary span.larger, h4.primary span.larger, h5.primary span.larger, h6.primary span.larger, blockquote.primary span.larger {
+  font-size: clamp(3rem, 1.445rem + 6.38vw, 7.188rem);
+  line-height: 0.65em;
+}
+.title.primary span.large, h1.primary span.large, h2.primary span.large, h3.primary span.large, h4.primary span.large, h5.primary span.large, h6.primary span.large, blockquote.primary span.large {
+  font-size: clamp(1.75rem, 0.868rem + 3.62vw, 4.125rem);
+  line-height: 0.93em;
+}
+.title.secondary, h1.secondary, h2.secondary, h3.secondary, h4.secondary, h5.secondary, h6.secondary, blockquote.secondary {
+  font-size: clamp(1.5rem, 0.943rem + 2.29vw, 3rem);
+}
+.title.third, h1.third, h2.third, h3.third, h4.third, h5.third, h6.third, blockquote.third {
+  font-size: clamp(1.375rem, 1.247rem + 0.52vw, 1.719rem);
+}
+.title.fourth, h1.fourth, h2.fourth, h3.fourth, h4.fourth, h5.fourth, h6.fourth, blockquote.fourth {
+  font-size: clamp(0.875rem, 0.643rem + 0.95vw, 1.5rem);
+}
+.title span.ruston, h1 span.ruston, h2 span.ruston, h3 span.ruston, h4 span.ruston, h5 span.ruston, h6 span.ruston, blockquote span.ruston {
+  font-family: "Ruston Script", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(4.25rem, 2.161rem + 8.57vw, 9.875rem);
+  text-transform: capitalize;
+  line-height: 0.9;
+}
+.title span, .title strong, h1 span, h1 strong, h2 span, h2 strong, h3 span, h3 strong, h4 span, h4 strong, h5 span, h5 strong, h6 span, h6 strong, blockquote span, blockquote strong {
+  display: block;
+}
+.title sup, h1 sup, h2 sup, h3 sup, h4 sup, h5 sup, h6 sup, blockquote sup {
+  font-size: 0.25em;
+  position: relative;
+  top: -0.5em;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+blockquote {
+  text-indent: -1em;
+}
+
+.legal {
+  font-size: clamp(0.875rem, 0.745rem + 0.53vw, 1.25rem);
+}
+
+body#tinymce {
+  padding: 1em 0;
+  background: white;
+  color: black;
+}
+body#tinymce h1, body#tinymce h2, body#tinymce h3, body#tinymce h4, body#tinymce h5, body#tinymce p, body#tinymce ul, body#tinymce ol, body#tinymce a {
+  color: currentColor;
+}
+body#tinymce h1, body#tinymce h2, body#tinymce h3, body#tinymce h4, body#tinymce h5 {
+  line-height: 1;
+}
+body#tinymce h1 span, body#tinymce h1 strong, body#tinymce h2 span, body#tinymce h2 strong, body#tinymce h3 span, body#tinymce h3 strong, body#tinymce h4 span, body#tinymce h4 strong, body#tinymce h5 span, body#tinymce h5 strong {
+  display: block;
+  font-family: "Ruston Script", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
